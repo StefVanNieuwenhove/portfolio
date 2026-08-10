@@ -1,38 +1,44 @@
 import { Briefcase, GraduationCap, MapPin, Code2 } from "lucide-react"
 
+import { useTranslations } from "next-intl"
+
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
+
 import { techLogos } from "@/lib/techLogo"
 import LogoLoop from "@/components/ui/LogoLoop"
 
 const AboutPage = () => {
+  const t = useTranslations("about")
+
   return (
-    <div className="mx-auto max-w-6xl px-6 pt-32 pb-24">
+    <div className="mx-auto w-full max-w-6xl px-6 py-24">
+      {/* Header */}
       <div className="max-w-3xl">
-        <Badge variant="secondary">About me</Badge>
+        <Badge variant="secondary">{t("badge")}</Badge>
 
         <h1 className="mt-6 text-4xl font-bold tracking-tight md:text-6xl">
-          Developer, builder
+          {t("hero.title")}
           <br />
-          <span className="text-muted-foreground">and problem solver.</span>
+
+          <span className="text-muted-foreground">{t("hero.subtitle")}</span>
         </h1>
 
         <p className="mt-8 text-lg leading-8 text-muted-foreground">
-          I&apos;m Stef, a software developer who enjoys turning ideas into
-          working software. I like understanding how systems work from the
-          frontend all the way down to the infrastructure.
+          {t("hero.description")}
         </p>
       </div>
 
+      {/* About cards */}
       <div className="mt-16 grid gap-6 md:grid-cols-2">
         <Card>
           <CardContent className="p-6">
             <MapPin className="mb-5 size-7" />
 
-            <h2 className="font-semibold">Based in Belgium</h2>
+            <h2 className="font-semibold">{t("cards.location.title")}</h2>
 
             <p className="mt-2 text-sm text-muted-foreground">
-              Working on software projects, infrastructure and web applications.
+              {t("cards.location.description")}
             </p>
           </CardContent>
         </Card>
@@ -41,10 +47,10 @@ const AboutPage = () => {
           <CardContent className="p-6">
             <Code2 className="mb-5 size-7" />
 
-            <h2 className="font-semibold">Full-stack development</h2>
+            <h2 className="font-semibold">{t("cards.fullStack.title")}</h2>
 
             <p className="mt-2 text-sm text-muted-foreground">
-              Comfortable working with both frontend and backend technologies.
+              {t("cards.fullStack.description")}
             </p>
           </CardContent>
         </Card>
@@ -53,11 +59,10 @@ const AboutPage = () => {
           <CardContent className="p-6">
             <GraduationCap className="mb-5 size-7" />
 
-            <h2 className="font-semibold">Always learning</h2>
+            <h2 className="font-semibold">{t("cards.learning.title")}</h2>
 
             <p className="mt-2 text-sm text-muted-foreground">
-              I enjoy exploring new technologies and understanding how they can
-              improve a project.
+              {t("cards.learning.description")}
             </p>
           </CardContent>
         </Card>
@@ -66,21 +71,20 @@ const AboutPage = () => {
           <CardContent className="p-6">
             <Briefcase className="mb-5 size-7" />
 
-            <h2 className="font-semibold">Building real projects</h2>
+            <h2 className="font-semibold">{t("cards.projects.title")}</h2>
 
             <p className="mt-2 text-sm text-muted-foreground">
-              My portfolio focuses on practical projects rather than simple
-              tutorials.
+              {t("cards.projects.description")}
             </p>
           </CardContent>
         </Card>
       </div>
+
+      {/* Tech stack */}
       <section className="mt-24">
-        <h2 className="text-2xl font-bold">My tech stack</h2>
-        <div
-          style={{ height: "200px", position: "relative", overflow: "hidden" }}
-        >
-          {/* Basic horizontal loop */}
+        <h2 className="text-2xl font-bold">{t("techStack.title")}</h2>
+
+        <div className="relative mt-6 h-[200px] overflow-hidden">
           <LogoLoop
             logos={techLogos}
             speed={100}
@@ -91,30 +95,21 @@ const AboutPage = () => {
             scaleOnHover
             fadeOut
             fadeOutColor="#ffffff"
-            ariaLabel="Technology stacks I use"
+            ariaLabel={t("techStack.ariaLabel")}
           />
         </div>
       </section>
 
+      {/* Approach */}
       <section className="mt-24">
-        <h2 className="text-2xl font-bold">My approach</h2>
+        <h2 className="text-2xl font-bold">{t("approach.title")}</h2>
 
         <div className="mt-6 max-w-3xl space-y-5 leading-7 text-muted-foreground">
-          <p>
-            I believe good software starts with understanding the problem before
-            writing the code.
-          </p>
+          <p>{t("approach.paragraph1")}</p>
 
-          <p>
-            I prefer simple architectures that can grow over time, strong
-            separation of responsibilities and interfaces that are easy to
-            understand.
-          </p>
+          <p>{t("approach.paragraph2")}</p>
 
-          <p>
-            Outside of writing code, I enjoy working with servers, Docker,
-            networking and self-hosted infrastructure.
-          </p>
+          <p>{t("approach.paragraph3")}</p>
         </div>
       </section>
     </div>

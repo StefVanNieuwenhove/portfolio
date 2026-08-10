@@ -1,0 +1,132 @@
+{
+  "home": {
+    "badge": "Software Developer",
+
+    "hero": {
+      "title": "I build software",
+      "subtitle": "that solves real problems.",
+      "description": "I'm Stef, a software developer focused on building reliable, scalable and modern applications using technologies like .NET, React, Next.js and Docker.",
+      "work": "View my work",
+      "contact": "Get in touch"
+    },
+
+    "whatIDo": {
+      "label": "WHAT I DO",
+      "title": "From idea to production.",
+      "description": "I enjoy working across the entire stack — from designing interfaces to building APIs, databases and deployment infrastructure.",
+
+      "frontend": {
+        "title": "Frontend",
+        "description": "Modern, responsive interfaces with React, Next.js, TypeScript and Tailwind CSS."
+      },
+
+      "backend": {
+        "title": "Backend",
+        "description": "APIs and business logic using .NET, Node.js, Entity Framework and Prisma."
+      },
+
+      "infrastructure": {
+        "title": "Infrastructure",
+        "description": "Docker, Linux, databases, reverse proxies and self-hosted infrastructure."
+      }
+    },
+
+    "cta": {
+      "title": "Have an idea?",
+      "description": "Let's build something useful, scalable and well-designed.",
+      "button": "Start a conversation"
+    }
+  },
+
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "about": {
+    "badge": "About me",
+
+    "hero": {
+      "title": "Developer, builder",
+      "subtitle": "and problem solver.",
+      "description": "I'm Stef, a software developer who enjoys turning ideas into working software. I like understanding how systems work from the frontend all the way down to the infrastructure."
+    },
+
+    "cards": {
+      "location": {
+        "title": "Based in Belgium",
+        "description": "Working on software projects, infrastructure and web applications."
+      },
+
+      "fullStack": {
+        "title": "Full-stack development",
+        "description": "Comfortable working with both frontend and backend technologies."
+      },
+
+      "learning": {
+        "title": "Always learning",
+        "description": "I enjoy exploring new technologies and understanding how they can improve a project."
+      },
+
+      "projects": {
+        "title": "Building real projects",
+        "description": "My portfolio focuses on practical projects rather than simple tutorials."
+      }
+    },
+
+    "techStack": {
+      "title": "My tech stack",
+      "ariaLabel": "Technology stack I use"
+    },
+
+    "approach": {
+      "title": "My approach",
+      "paragraph1": "I believe good software starts with understanding the problem before writing the code.",
+      "paragraph2": "I prefer simple architectures that can grow over time, strong separation of responsibilities and interfaces that are easy to understand.",
+      "paragraph3": "Outside of writing code, I enjoy working with servers, Docker, networking and self-hosted infrastructure."
+    }
+  },
+
+  "contact": {
+    "badge": "Contact",
+
+    "hero": {
+      "title": "Let's build something",
+      "subtitle": "together.",
+      "description": "Have a project, idea or opportunity? Send me a message and I'll get back to you."
+    },
+
+    "email": {
+      "title": "Email"
+    },
+
+    "github": {
+      "title": "GitHub"
+    },
+
+    "linkedin": {
+      "title": "LinkedIn"
+    },
+
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+
+      "email": {
+        "label": "Email",
+        "placeholder": "you@example.com"
+      },
+
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell me about your project..."
+      },
+
+      "submit": "Send message"
+    }
+  }
+}

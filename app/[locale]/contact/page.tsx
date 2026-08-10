@@ -2,6 +2,8 @@ import Link from "next/link"
 import { Mail } from "lucide-react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 
+import { useTranslations } from "next-intl"
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -10,29 +12,34 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 const ContactPage = () => {
+  const t = useTranslations("contact")
+
   return (
-    <div className="mx-auto max-w-6xl px-6 pt-32 pb-24">
+    <div className="mx-auto w-full max-w-6xl px-6 py-24">
+      {/* Header */}
       <div className="max-w-3xl">
-        <Badge variant="secondary">Contact</Badge>
+        <Badge variant="secondary">{t("badge")}</Badge>
 
         <h1 className="mt-6 text-4xl font-bold tracking-tight md:text-6xl">
-          Let&apos;s build something
+          {t("hero.title")}
           <br />
-          <span className="text-muted-foreground">together.</span>
+
+          <span className="text-muted-foreground">{t("hero.subtitle")}</span>
         </h1>
 
         <p className="mt-6 text-lg leading-8 text-muted-foreground">
-          Have a project, idea or opportunity? Send me a message and I&apos;ll
-          get back to you.
+          {t("hero.description")}
         </p>
       </div>
 
       <div className="mt-16 grid gap-12 md:grid-cols-[1fr_1.5fr]">
+        {/* Contact information */}
         <div className="space-y-8">
+          {/* Email */}
           <div>
             <Mail className="mb-4 size-6" />
 
-            <h2 className="font-semibold">Email</h2>
+            <h2 className="font-semibold">{t("email.title")}</h2>
 
             <Link
               href="mailto:hello@example.com"
@@ -42,28 +49,32 @@ const ContactPage = () => {
             </Link>
           </div>
 
+          {/* GitHub */}
           <div>
             <FaGithub className="mb-4 size-6" />
 
-            <h2 className="font-semibold">GitHub</h2>
+            <h2 className="font-semibold">{t("github.title")}</h2>
 
             <Link
               href="https://github.com"
               target="_blank"
+              rel="noopener noreferrer"
               className="mt-2 block text-muted-foreground hover:text-foreground"
             >
               github.com
             </Link>
           </div>
 
+          {/* LinkedIn */}
           <div>
             <FaLinkedin className="mb-4 size-6" />
 
-            <h2 className="font-semibold">LinkedIn</h2>
+            <h2 className="font-semibold">{t("linkedin.title")}</h2>
 
             <Link
               href="https://linkedin.com"
               target="_blank"
+              rel="noopener noreferrer"
               className="mt-2 block text-muted-foreground hover:text-foreground"
             >
               linkedin.com
@@ -71,33 +82,44 @@ const ContactPage = () => {
           </div>
         </div>
 
+        {/* Contact form */}
         <Card>
           <CardContent className="p-6 md:p-8">
             <form className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
+                <Label htmlFor="name">{t("form.name.label")}</Label>
 
-                <Input id="name" placeholder="Your name" />
+                <Input
+                  id="name"
+                  name="name"
+                  placeholder={t("form.name.placeholder")}
+                />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email">{t("form.email.label")}</Label>
 
-                <Input id="email" type="email" placeholder="you@example.com" />
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder={t("form.email.placeholder")}
+                />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message">Message</Label>
+                <Label htmlFor="message">{t("form.message.label")}</Label>
 
                 <Textarea
                   id="message"
-                  placeholder="Tell me about your project..."
+                  name="message"
+                  placeholder={t("form.message.placeholder")}
                   className="min-h-40"
                 />
               </div>
 
               <Button type="submit" className="w-full" size="lg">
-                Send message
+                {t("form.submit")}
               </Button>
             </form>
           </CardContent>
