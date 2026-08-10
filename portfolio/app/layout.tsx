@@ -12,6 +12,25 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+export const metadata = {
+  title: {
+    default: "Stef Van Nieuwenhove",
+    template: "%s | Stef Van Nieuwenhove",
+  },
+  description: "Stef Van Nieuwenhove's personal portfolio website.",
+  keywords: [
+    "Stef Van Nieuwenhove",
+    "Portfolio",
+    "Software Developer",
+    "Full Stack Developer",
+    "Next.js",
+    "React",
+    "TypeScript",
+  ],
+  authors: [{ name: "Stef Van Nieuwenhove" }],
+  creator: "Stef Van Nieuwenhove",
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
