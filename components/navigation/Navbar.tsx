@@ -19,7 +19,7 @@ const Navbar = () => {
     <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="text-lg font-semibold tracking-tight">
-          Stef<span className="text-muted-foreground">.</span>
+          SWS<span className="text-muted-foreground">.</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">

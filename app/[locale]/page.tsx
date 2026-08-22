@@ -35,14 +35,14 @@ export default function Home() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3">
-              <Button size="lg">
-                <Link href="/projects">
-                  {t("hero.work")}
-
-                  <ArrowRight className="ml-2 size-4" />
-                </Link>
-              </Button>
-
+              <Link
+                href="/projects"
+                className="flex flex-row items-center gap-2"
+              >
+                <Button size="lg">
+                  View my work <ArrowRight data-icon="inline-end" />
+                </Button>
+              </Link>
               <Button size="lg" variant="outline">
                 <Link href="/contact">{t("hero.contact")}</Link>
               </Button>
@@ -150,13 +150,12 @@ export default function Home() {
             {t("cta.description")}
           </p>
 
-          <Button className="mt-8" size="lg">
-            <Link href="/contact">
-              {t("cta.button")}
-
-              <ArrowRight data-icon="inline-end" className="ml-2 size-4" />
-            </Link>
-          </Button>
+          <Link href="/contact" className="mt-8">
+            <Button size="lg">
+              Start a conversation
+              <ArrowRight className="ml-2 size-4" data-icon="inline-end" />
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

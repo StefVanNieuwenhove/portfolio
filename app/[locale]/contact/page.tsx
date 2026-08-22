@@ -42,10 +42,10 @@ const ContactPage = () => {
             <h2 className="font-semibold">{t("email.title")}</h2>
 
             <Link
-              href="mailto:hello@example.com"
+              href="mailto:stef.vannieuwenhove@telenet.be"
               className="mt-2 block text-muted-foreground hover:text-foreground"
             >
-              hello@example.com
+              stef.vannieuwenhove@telenet.be
             </Link>
           </div>
 
@@ -56,12 +56,12 @@ const ContactPage = () => {
             <h2 className="font-semibold">{t("github.title")}</h2>
 
             <Link
-              href="https://github.com"
+              href="https://github.com/stevannieuwenhove"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 block text-muted-foreground hover:text-foreground"
             >
-              github.com
+              github.com/stevannieuwenhove
             </Link>
           </div>
 
