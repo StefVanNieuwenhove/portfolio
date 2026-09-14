@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Jouw Naam — Portfolio",
+    "description": "Full-stack developer die snelle, toegankelijke en nuttige webapplicaties bouwt."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Over mij",
+    "projects": "Projecten",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hoi, ik ben",
+    "name": "Jouw Naam",
+    "role": "Full-Stack Webontwikkelaar",
+    "tagline": "Ik ontwerp en bouw webapplicaties die snel, toegankelijk en écht nuttig zijn — van eerste schets tot productie.",
+    "ctaPrimary": "Bekijk mijn projecten",
+    "ctaSecondary": "Neem contact op",
+    "highlightsTitle": "Waar ik op focus",
+    "highlight1Title": "Duidelijke architectuur",
+    "highlight1Text": "Onderhoudbare code en een logische structuur, zodat het project makkelijk kan groeien.",
+    "highlight2Title": "Gebruiker centraal",
+    "highlight2Text": "Interfaces die vanzelf aanvoelen, op elk schermformaat.",
+    "highlight3Title": "Nauwe samenwerking",
+    "highlight3Text": "Duidelijke communicatie met klanten van start tot lancering en verder."
+  },
+  "about": {
+    "title": "Over mij",
+    "intro": "Ik ben een webontwikkelaar die ideeën omzet in producten die mensen écht graag gebruiken. Hieronder lees je meer over hoe ik werk en wat ik meebreng in een project.",
+    "techStackTitle": "Mijn techstack",
+    "whyBuildTitle": "Waarom ik webapps bouw",
+    "whyBuildText": "Ik bouw webapps omdat ik het leuk vind om echte problemen op te lossen met code — iets rommelig of manueel omzetten naar iets simpel, snel en betrouwbaar. Elk project is een kans om iets nieuws te leren en om iemands dag net dat beetje makkelijker te maken.",
+    "workWithClientTitle": "Hoe ik samenwerk met klanten",
+    "workWithClientText": "Goede software begint bij goede communicatie. Ik luister goed naar wat een klant écht nodig heeft, hou hen op elk moment op de hoogte, en durf ook tegengas te geven als ik een beter idee zie. Het doel is altijd een resultaat waar de klant trots op is.",
+    "socialTitle": "Neem contact op"
+  },
+  "projects": {
+    "title": "Mijn projecten",
+    "subtitle": "Een selectie van dingen die ik heb gebouwd — persoonlijke projecten, freelancewerk en experimenten.",
+    "viewProject": "Bekijk project",
+    "viewCode": "Bekijk code",
+    "techUsed": "Gebruikte technologie"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Heb je een project in gedachten of wil je gewoon eens gedag zeggen? Stuur me een bericht.",
+    "form": {
+      "name": "Naam",
+      "namePlaceholder": "Jouw naam",
+      "email": "E-mail",
+      "emailPlaceholder": "jij@voorbeeld.com",
+      "message": "Bericht",
+      "messagePlaceholder": "Vertel me over je project...",
+      "send": "Bericht versturen",
+      "sending": "Versturen...",
+      "success": "Bedankt! Je bericht is verzonden — ik neem snel contact met je op.",
+      "error": "Er ging iets mis. Probeer het opnieuw of mail me rechtstreeks."
+    },
+    "socialTitle": "Of vind me hier"
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden."
+  }
+}
