@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Your Name — Portfolio",
+    "description": "Full-stack developer building clean, reliable web applications."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hi, I'm",
+    "name": "Your Name",
+    "role": "Full-Stack Web Developer",
+    "tagline": "I design and build web applications that are fast, accessible, and genuinely useful — from first sketch to production.",
+    "ctaPrimary": "View my projects",
+    "ctaSecondary": "Get in touch",
+    "highlightsTitle": "What I focus on",
+    "highlight1Title": "Clean architecture",
+    "highlight1Text": "Maintainable code and sensible structure, so the project stays easy to grow.",
+    "highlight2Title": "User-first design",
+    "highlight2Text": "Interfaces that feel obvious to use, on every screen size.",
+    "highlight3Title": "Close collaboration",
+    "highlight3Text": "Clear communication with clients from kickoff to launch and beyond."
+  },
+  "about": {
+    "title": "About me",
+    "intro": "I'm a web developer who enjoys turning ideas into products people actually want to use. Below is a bit more about how I work and what I bring to a project.",
+    "techStackTitle": "My tech stack",
+    "whyBuildTitle": "Why I build web apps",
+    "whyBuildText": "I build web apps because I like solving real problems with code — taking something messy or manual and turning it into something simple, fast, and reliable. Every project is a chance to learn something new and to make someone's day a little easier.",
+    "workWithClientTitle": "How I work with clients",
+    "workWithClientText": "I believe good software comes from good communication. I listen carefully to what a client actually needs, keep them updated at every step, and I'm not afraid to push back with a better idea when I see one. The goal is always a result the client is proud to show off.",
+    "socialTitle": "Get in touch"
+  },
+  "projects": {
+    "title": "My projects",
+    "subtitle": "A selection of things I've built — personal projects, freelance work, and experiments.",
+    "viewProject": "View project",
+    "viewCode": "View code",
+    "techUsed": "Tech used"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind or just want to say hi? Send me a message.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Thanks! Your message has been sent — I'll get back to you soon.",
+      "error": "Something went wrong. Please try again or email me directly."
+    },
+    "socialTitle": "Or find me here"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
