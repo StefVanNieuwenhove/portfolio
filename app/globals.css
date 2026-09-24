@@ -127,4 +127,8 @@
   html {
     @apply font-sans;
   }
+
+  .container {
+    @apply max-w-2xl mx-auto;
+  }
 }

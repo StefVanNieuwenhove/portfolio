@@ -1,5 +1,6 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { ExternalLink } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -11,7 +12,11 @@ import {
 } from '@/components/ui/card';
 import type { Project } from '@/data/projects';
 
-export function ProjectCard({ project }: { project: Project }) {
+type Props = {
+  project: Project;
+};
+
+const ProjectCard = ({ project }: Props) => {
   const t = useTranslations('projects');
   const locale = useLocale() as 'en' | 'nl';
 
@@ -39,7 +44,7 @@ export function ProjectCard({ project }: { project: Project }) {
       </CardContent>
       <CardFooter className='flex gap-2'>
         {project.liveUrl && (
-          <Button asChild size='sm' variant='secondary'>
+          <Button size='sm' variant='secondary'>
             <a href={project.liveUrl} target='_blank' rel='noopener noreferrer'>
               <ExternalLink />
               {t('viewProject')}
@@ -47,9 +52,9 @@ export function ProjectCard({ project }: { project: Project }) {
           </Button>
         )}
         {project.repoUrl && (
-          <Button asChild size='sm' variant='outline'>
+          <Button size='sm' variant='outline'>
             <a href={project.repoUrl} target='_blank' rel='noopener noreferrer'>
-              <Github />
+              <FaGithub />
               {t('viewCode')}
             </a>
           </Button>
@@ -57,4 +62,6 @@ export function ProjectCard({ project }: { project: Project }) {
       </CardFooter>
     </Card>
   );
-}
+};
+
+export default ProjectCard;
