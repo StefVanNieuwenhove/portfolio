@@ -1,7 +1,11 @@
 import { useTranslations } from 'next-intl';
-
 import { ProjectCard } from '@/components/feature';
 import { projects } from '@/data/projects';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Projects',
+};
 
 const ProjectsPage = () => {
   const t = useTranslations('projects');

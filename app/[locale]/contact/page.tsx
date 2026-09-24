@@ -1,6 +1,10 @@
 import { useTranslations } from 'next-intl';
-
+import { Metadata } from 'next';
 import { ContactForm, SocialIcons } from '@/components/feature';
+
+export const metadata: Metadata = {
+  title: 'Contact',
+};
 
 const ContactPage = () => {
   const t = useTranslations('contact');
